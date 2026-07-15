@@ -18,11 +18,17 @@ GMC_FEED = "https://www.croma.com/gmcfeed.xml"
 IMAGE_FOLDER = "images"
 CACHE_FILE = "image_cache.json"
 
-# Change this to your GitHub Pages URL
+# Your GitHub Pages URL
 IMAGE_BASE_URL = "https://khyatisok.github.io/croma-flash-feed-padding/images"
 
-# Resize product to 75% of original size
+# Final output image size
+OUTPUT_SIZE = 1080
+
+# Resize product to 75% of canvas
 SCALE = 0.75
+
+# Frame image
+FRAME_PATH = "frame.png"
 
 MAX_WORKERS = 6
 
@@ -31,6 +37,10 @@ MAX_WORKERS = 6
 os.makedirs(IMAGE_FOLDER, exist_ok=True)
 
 session = requests.Session()
+
+# Load frame only once
+frame = Image.open(FRAME_PATH).convert("RGBA")
+frame = frame.resize((OUTPUT_SIZE, OUTPUT_SIZE), Image.LANCZOS)
 
 print("Downloading campaign page...")
 
@@ -105,8 +115,6 @@ for item in list(items):
     if additional is not None:
         additional.text = new_url
 
-    # only regenerate if image changed or doesn't exist
-
     image_path = os.path.join(IMAGE_FOLDER, f"{sku}.png")
 
     if (
@@ -117,7 +125,6 @@ for item in list(items):
         tasks.append((sku, image_url))
 
 print(f"Removed {removed} products")
-
 print(f"Images needing regeneration: {len(tasks)}")
 
 # -----------------------------------------------------
@@ -139,7 +146,7 @@ for old in existing - skus:
         pass
 
 # -----------------------------------------------------
-# Image processor
+# Image Processor
 # -----------------------------------------------------
 
 def process_image(task):
@@ -156,30 +163,42 @@ def process_image(task):
 
         img = Image.open(BytesIO(response.content)).convert("RGBA")
 
+        # Original dimensions
         w, h = img.size
 
-        new_w = int(w * SCALE)
-        new_h = int(h * SCALE)
+        # Resize while maintaining aspect ratio
+        target_w = int(OUTPUT_SIZE * SCALE)
+        target_h = int((h / w) * target_w)
+
+        # Prevent image from exceeding safe area
+        if target_h > OUTPUT_SIZE * SCALE:
+            target_h = int(OUTPUT_SIZE * SCALE)
+            target_w = int((w / h) * target_h)
 
         resized = img.resize(
-            (new_w, new_h),
+            (target_w, target_h),
             Image.LANCZOS
         )
 
+        # Create white background
         canvas = Image.new(
             "RGBA",
-            (w, h),
+            (OUTPUT_SIZE, OUTPUT_SIZE),
             (255, 255, 255, 255)
         )
 
-        x = (w - new_w) // 2
-        y = (h - new_h) // 2
+        # Center product
+        x = (OUTPUT_SIZE - target_w) // 2
+        y = (OUTPUT_SIZE - target_h) // 2
 
         canvas.paste(
             resized,
             (x, y),
             resized
         )
+
+        # Overlay frame
+        canvas.alpha_composite(frame)
 
         output = os.path.join(
             IMAGE_FOLDER,
@@ -201,7 +220,7 @@ def process_image(task):
 # -----------------------------------------------------
 
 with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
-    executor.map(process_image, tasks)
+    list(executor.map(process_image, tasks))
 
 # -----------------------------------------------------
 # Save XML
