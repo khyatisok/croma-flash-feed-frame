@@ -14,7 +14,7 @@ updated, stay happy! </description>
 <g:custom_label_0>Computers &amp; Tablets</g:custom_label_0>
 <g:custom_label_1>Laptops</g:custom_label_1>
 <g:custom_label_2>Windows Laptops</g:custom_label_2>
-<g:custom_label_3/>
+<g:custom_label_3>EDLP</g:custom_label_3>
 <g:custom_label_4/>
 <g:gtin>8906194458110</g:gtin>
 <link>https://www.croma.com/acer-aspire-5-intel-core-ultra-5-laptop-16gb-512gb-ssd-windows-11-home-14-inch-wuxga-ips-display-ms-office-silver-1-2-kg-/p/323615</link>
@@ -31,7 +31,7 @@ updated, stay happy! </description>
 <g:redemption_channel>ONLINE</g:redemption_channel>
 <g:promotion_destination>SHOPPING_ADS</g:promotion_destination>
 <g:shipping_label>Free Delivery</g:shipping_label>
-<g:internal_label>['EDLP']</g:internal_label></item>
+</item>
 <item>
 <g:id>322595</g:id>
 <title>Nothing Phone 3a Lite 5G (8GB RAM, 128GB, Black)</title>
@@ -41,7 +41,7 @@ updated, stay happy! </description>
 <g:custom_label_0>Phones &amp; Wearables</g:custom_label_0>
 <g:custom_label_1>Mobile Phones</g:custom_label_1>
 <g:custom_label_2>Android Phones</g:custom_label_2>
-<g:custom_label_3/>
+<g:custom_label_3>EDLP</g:custom_label_3>
 <g:custom_label_4/>
 <g:gtin>6974434227101</g:gtin>
 <link>https://www.croma.com/nothing-phone-3a-lite-5g-8gb-ram-128gb-black-/p/322595</link>
@@ -61,7 +61,7 @@ updated, stay happy! </description>
 <g:country>IN</g:country>
 <g:price>79.0 INR</g:price>
 </g:shipping>
-<g:internal_label>['EDLP']</g:internal_label></item>
+</item>
 <item>
 <g:id>323352</g:id>
 <title>Xiaomi 17T 5G (12GB RAM, 256GB, Blue)</title>
@@ -71,7 +71,7 @@ updated, stay happy! </description>
 <g:custom_label_0>Phones &amp; Wearables</g:custom_label_0>
 <g:custom_label_1>Mobile Phones</g:custom_label_1>
 <g:custom_label_2>Android Phones</g:custom_label_2>
-<g:custom_label_3/>
+<g:custom_label_3>EDLP</g:custom_label_3>
 <g:custom_label_4/>
 <g:gtin>8904523801477</g:gtin>
 <link>https://www.croma.com/xiaomi-17t-5g-12gb-ram-256gb-blue-/p/323352</link>
@@ -91,7 +91,7 @@ updated, stay happy! </description>
 <g:country>IN</g:country>
 <g:price>129.0 INR</g:price>
 </g:shipping>
-<g:internal_label>['EDLP']</g:internal_label></item>
+</item>
 <item>
 <g:id>322464</g:id>
 <title>Oppo A6x 5G (4GB RAM, 128GB, Ice Blue)</title>
@@ -101,7 +101,7 @@ updated, stay happy! </description>
 <g:custom_label_0>Phones &amp; Wearables</g:custom_label_0>
 <g:custom_label_1>Mobile Phones</g:custom_label_1>
 <g:custom_label_2>Android Phones</g:custom_label_2>
-<g:custom_label_3/>
+<g:custom_label_3>EDLP</g:custom_label_3>
 <g:custom_label_4/>
 <g:gtin>6932169392099</g:gtin>
 <link>https://www.croma.com/oppo-a6x-5g-4gb-ram-128gb-ice-blue-/p/322464</link>
@@ -121,7 +121,7 @@ updated, stay happy! </description>
 <g:country>IN</g:country>
 <g:price>79.0 INR</g:price>
 </g:shipping>
-<g:internal_label>['EDLP']</g:internal_label></item>
+</item>
 <item>
 <g:id>323047</g:id>
 <title>DELL DC15255 AMD Ryzen 5 Notebook Laptop (8GB, 512GB SSD, Windows 11, 15.6 inch Full HD Display, MS Office Home 2024, Carbon Black, 1.66 KG)</title>
@@ -131,7 +131,7 @@ updated, stay happy! </description>
 <g:custom_label_0>Computers &amp; Tablets</g:custom_label_0>
 <g:custom_label_1>Laptops</g:custom_label_1>
 <g:custom_label_2>Windows Laptops</g:custom_label_2>
-<g:custom_label_3/>
+<g:custom_label_3>EDLP</g:custom_label_3>
 <g:custom_label_4/>
 <g:gtin>5397184733790</g:gtin>
 <link>https://www.croma.com/dell-dc15255-amd-ryzen-5-notebook-laptop-8gb-512gb-ssd-windows-11-15-6-inch-full-hd-display-ms-office-home-2024-carbon-black-1-66-kg-/p/323047</link>
@@ -151,5 +151,5 @@ updated, stay happy! </description>
 <g:country>IN</g:country>
 <g:price>49.0 INR</g:price>
 </g:shipping>
-<g:internal_label>['EDLP']</g:internal_label></item>
+</item>
 </channel> </rss>
