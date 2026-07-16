@@ -103,11 +103,16 @@ for item in list(items):
         continue
 
     image_url = image_node.text.strip()
-
+    
     new_cache[sku] = image_url
-
+    
+    custom_label_3 = item.find("g:custom_label_3", ns)
+    
+    if custom_label_3 is not None:
+        custom_label_3.text = "EDLP"
+    
     new_url = f"{IMAGE_BASE_URL}/{sku}.png"
-
+    
     image_node.text = new_url
 
     additional = item.find("g:additional_image_link", ns)
