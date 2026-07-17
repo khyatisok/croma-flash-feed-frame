@@ -122,6 +122,16 @@ for item in list(items):
         list(item).index(custom_label_4) + 1,
         internal_label
     )
+    
+    # Update image URLs to framed images
+    new_url = f"{IMAGE_BASE_URL}/{sku}.png"
+    
+    image_node.text = new_url
+    
+    additional = item.find("g:additional_image_link", ns)
+    
+    if additional is not None:
+        additional.text = new_url
 
     image_path = os.path.join(IMAGE_FOLDER, f"{sku}.png")
 
