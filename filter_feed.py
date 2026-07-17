@@ -106,19 +106,22 @@ for item in list(items):
     
     new_cache[sku] = image_url
     
+    # Set custom_label_3 = EDLP
     custom_label_3 = item.find("g:custom_label_3", ns)
+    custom_label_3.text = "EDLP"
     
-    if custom_label_3 is not None:
-        custom_label_3.text = "EDLP"
+    # Insert internal_label after custom_label_4
+    custom_label_4 = item.find("g:custom_label_4", ns)
     
-    new_url = f"{IMAGE_BASE_URL}/{sku}.png"
+    internal_label = etree.Element(
+        "{http://base.google.com/ns/1.0}internal_label"
+    )
+    internal_label.text = "['EDLP']"
     
-    image_node.text = new_url
-
-    additional = item.find("g:additional_image_link", ns)
-
-    if additional is not None:
-        additional.text = new_url
+    item.insert(
+        list(item).index(custom_label_4) + 1,
+        internal_label
+    )
 
     image_path = os.path.join(IMAGE_FOLDER, f"{sku}.png")
 
