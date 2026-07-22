@@ -6,6 +6,36 @@
 <description> Get all deals from Croma Retail Stay
 updated, stay happy! </description> 
 <item>
+<g:id>323159</g:id>
+<title>realme 16T 5G (6GB RAM, 128GB, Aurora Green)</title>
+<description>Buy realme 16T 5G (6GB RAM, 128GB, Aurora Green) online at best prices from Croma. Check product details, reviews &amp; more. Shop now!</description>
+<g:google_product_category>Electronics &gt; Communications &gt; Telephony &gt; Mobile Phones</g:google_product_category>
+<g:product_type>Phones &amp; Wearables&gt;Mobile Phones&gt;Android Phones</g:product_type>
+<g:custom_label_0>Phones &amp; Wearables</g:custom_label_0>
+<g:custom_label_1>Mobile Phones</g:custom_label_1>
+<g:custom_label_2>Android Phones</g:custom_label_2>
+<g:custom_label_3>edlp</g:custom_label_3>
+<g:custom_label_4/>
+<g:internal_label>['edlp']</g:internal_label><g:gtin>6941764497214</g:gtin>
+<link>https://www.croma.com/realme-16t-5g-6gb-ram-128gb-aurora-green-/p/323159</link>
+<g:price>50999.0 INR</g:price>
+<g:sale_price>29999.0 INR</g:sale_price>
+<g:brand>Realme</g:brand>
+<g:condition>new</g:condition>
+<g:image_link>https://khyatisok.github.io/croma-flash-feed-frame/images/323159.png</g:image_link>
+<g:additional_image_link>https://khyatisok.github.io/croma-flash-feed-frame/images/323159.png</g:additional_image_link>
+<g:availability>in_stock</g:availability>
+<g:color> Aurora Green </g:color>
+<g:product_applicability>SPECIFIC_PRODUCTS</g:product_applicability>
+<g:offer_type>NO_CODE</g:offer_type>
+<g:redemption_channel>ONLINE</g:redemption_channel>
+<g:promotion_destination>SHOPPING_ADS</g:promotion_destination>
+<g:shipping>
+<g:country>IN</g:country>
+<g:price>79.0 INR</g:price>
+</g:shipping>
+</item>
+<item>
 <g:id>322495</g:id>
 <title>oppo F33 Pro 5G (8GB RAM, 128GB, Passion Red)</title>
 <description>Buy oppo F33 Pro 5G (8GB RAM, 128GB, Passion Red) online at best prices from Croma. Check product details, reviews &amp; more. Shop now!</description>
@@ -149,36 +179,6 @@ updated, stay happy! </description>
 <g:shipping>
 <g:country>IN</g:country>
 <g:price>49.0 INR</g:price>
-</g:shipping>
-</item>
-<item>
-<g:id>323159</g:id>
-<title>realme 16T 5G (6GB RAM, 128GB, Aurora Green)</title>
-<description>Buy realme 16T 5G (6GB RAM, 128GB, Aurora Green) online at best prices from Croma. Check product details, reviews &amp; more. Shop now!</description>
-<g:google_product_category>Electronics &gt; Communications &gt; Telephony &gt; Mobile Phones</g:google_product_category>
-<g:product_type>Phones &amp; Wearables&gt;Mobile Phones&gt;Android Phones</g:product_type>
-<g:custom_label_0>Phones &amp; Wearables</g:custom_label_0>
-<g:custom_label_1>Mobile Phones</g:custom_label_1>
-<g:custom_label_2>Android Phones</g:custom_label_2>
-<g:custom_label_3>edlp</g:custom_label_3>
-<g:custom_label_4/>
-<g:internal_label>['edlp']</g:internal_label><g:gtin>6941764497214</g:gtin>
-<link>https://www.croma.com/realme-16t-5g-6gb-ram-128gb-aurora-green-/p/323159</link>
-<g:price>50999.0 INR</g:price>
-<g:sale_price>29999.0 INR</g:sale_price>
-<g:brand>Realme</g:brand>
-<g:condition>new</g:condition>
-<g:image_link>https://khyatisok.github.io/croma-flash-feed-frame/images/323159.png</g:image_link>
-<g:additional_image_link>https://khyatisok.github.io/croma-flash-feed-frame/images/323159.png</g:additional_image_link>
-<g:availability>out_of_stock</g:availability>
-<g:color> Aurora Green </g:color>
-<g:product_applicability>SPECIFIC_PRODUCTS</g:product_applicability>
-<g:offer_type>NO_CODE</g:offer_type>
-<g:redemption_channel>ONLINE</g:redemption_channel>
-<g:promotion_destination>SHOPPING_ADS</g:promotion_destination>
-<g:shipping>
-<g:country>IN</g:country>
-<g:price>79.0 INR</g:price>
 </g:shipping>
 </item>
 </channel> </rss>
