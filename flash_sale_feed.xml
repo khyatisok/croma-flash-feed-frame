@@ -32,7 +32,7 @@ updated, stay happy! </description>
 <g:promotion_destination>SHOPPING_ADS</g:promotion_destination>
 <g:shipping>
 <g:country>IN</g:country>
-<g:price>49.0 INR</g:price>
+<g:price>149.0 INR</g:price>
 </g:shipping>
 </item>
 <item>
@@ -49,7 +49,7 @@ updated, stay happy! </description>
 <g:internal_label>['edlp']</g:internal_label><g:gtin>199896407861</g:gtin>
 <link>https://www.croma.com/hp-15-fc0782au-amd-ryzen-5-laptop-16gb-512gb-ssd-windows-11-home-15-6-inch-full-hd-ips-display-natural-silver-1-59-kg-/p/323067</link>
 <g:price>95240.0 INR</g:price>
-<g:sale_price>64990.0 INR</g:sale_price>
+<g:sale_price>65990.0 INR</g:sale_price>
 <g:brand>HP</g:brand>
 <g:condition>new</g:condition>
 <g:image_link>https://khyatisok.github.io/croma-flash-feed-frame/images/323067.png</g:image_link>
@@ -62,7 +62,7 @@ updated, stay happy! </description>
 <g:promotion_destination>SHOPPING_ADS</g:promotion_destination>
 <g:shipping>
 <g:country>IN</g:country>
-<g:price>49.0 INR</g:price>
+<g:price>149.0 INR</g:price>
 </g:shipping>
 </item>
 </channel> </rss>
